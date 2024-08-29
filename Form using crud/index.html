@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/660e2f6c05.js" crossorigin="anonymous"></script>
+    </head>
+
+<body style="background-color: black; color: azure;">
+    <!-- admission form -->
+    <div class="container ">
+        <div class="row my-4 justify-content-center">
+            <div class="col-8 ">
+                <form action="" id="student-form">
+            <h4 class="text-center text-info">ADMISSION FORM</h4>
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-medium ">Name :</label>
+                        <input type="text" class="form-control" id="name" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label fw-medium">Last Name :</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label fw-medium">Age :</label>
+                        <input type="number" class="form-control" id="age" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="class" class="form-label fw-medium">Class :</label>
+                        <input type="number" class="form-control" id="classNo" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-outline-info ">Add Student</button> 
+            </div>
+        </div>
+    </form>
+
+
+
+        <!--  data table -->
+          <table id="student-table" class="table table-striped   text-center">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Class</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+
+          <!-- edit form -->
+          <div class="row my-4 justify-content-center ">
+            <div class="col-8 ">
+                <form action="" id="edit-form" class="d-none">
+            <h4 class="text-center text-info">UPDATE  FORM</h4>
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-medium ">Name :</label>
+                        <input type="text" class="form-control" id="edit-name" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label fw-medium">Last Name :</label>
+                        <input type="text" class="form-control" id="edit-last_name" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label fw-medium">Age :</label>
+                        <input type="number" class="form-control" id="edit-age" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="class" class="form-label fw-medium">Class :</label>
+                        <input type="number" class="form-control" id="edit-classNo" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-outline-info ">Save</button> 
+            </div>
+        </div>
+          <!-- end -->
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
