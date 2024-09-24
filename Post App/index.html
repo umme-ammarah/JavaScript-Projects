@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post App with Formatting</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<nav class="navbar bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.png" alt="Bootstrap" width="100" height="100">
+    </a>
+     <div class="profile-photo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png"
+            id="profilePhotoImg" alt="Profile Photo" />
+          <input type="file" id="profilePhotoInput" accept="image/*" style="display: none" />
+        </div></nav>
+        <!-- nav bar end -->
+         <div class="row mt-5 mx-3" >
+          <div class="p-4 col-lg-4 col-md-6">
+            <div class="card w-100">
+              <div class="card-body ">
+                <h5 class="card-title fw-bold">Title :</h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+               
+                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Description:</label>
+                <textarea id="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                     <div class="mt-3">
+                      <div class="images  d-flex">
+                      <img  onclick="selectimg('/images/bg.jpeg')"  src="/images/bg.jpeg" alt="" class="bg-img">
+                      <img  onclick="selectimg('/images/bg2.jpeg')" src="/images/bg2.jpeg" alt="" class="bg-img">
+                      <img onclick="selectimg('/images/bg3.jpeg')"  src="/images/bg3.jpeg" alt="" class="bg-img">
+                      <img  onclick="selectimg('/images/bg4.jpeg')" src="/images/bg4.jpeg" alt="" class="bg-img">
+                      <img onclick="selectimg('/images/bg5.jpeg')"  src="/images/bg5.jpeg" alt="" class="bg-img">
+                      </div>
+                     </div>
+                <a onclick="post()" href="#" class="btn btn-primary bg-info  text-black mt-3">Post</a>
+              </div>
+            </div>
+
+          </div>
+          
+            <div id="post" class="p-4 col-lg-8 col-md-6"></div>
+         
+         </div>
+  </div>
+
+<body>
+  <script src="app.js"></script>
+</body>
+</html>
