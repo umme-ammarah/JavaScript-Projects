@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-editor-header{
+    background-color: rgb(235, 168, 168); 
+}
+.content{
+    height: 70vh;
+    position: relative;
+    outline: none;
+}
+.footer{
+    height: 3vh;
+    background-color: rgb(235, 168, 168); 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.imageInput  img{
+    height: 200px;
+    width: 200px;
+
+
+}
+
+video{
+    pointer-events: none;
+}
+
+.color-picker-container {
+    position: relative; /* Allows the dropdown to be positioned relative to this container */
+    display: inline-block;
+}
+
+.color-picker-dropdown {
+    position: absolute; /* Ensures the dropdown floats over other content */
+    top: 100%; /* Position the dropdown right below the palette button */
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    width: 140px; /* Adjusted width to fit 4 buttons per row */
+    padding: 5px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #fdfcfc;
+    z-index: 10; /* Ensure the dropdown appears above other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-choice {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-choice:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+button :hover{
+    padding: 2px;
+    
+}
